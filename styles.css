@@ -1,0 +1,39 @@
+
+@font-face { font-family: dirt2_soulstaker; src: url("./fonts/dirt2 soulstalker.otf"); } 
+
+nav{
+	background-color: black;
+	border-bottom: 2px solid gray;
+}
+
+.nav-link{
+	color: white;
+}
+
+a{
+	text-decoration: none; /* no underline */
+	color: white;
+}
+
+a:hover { color:white; }
+
+nav li img{
+	height: 45px;
+}
+
+.title{
+	font-family: dirt2_soulstaker;
+	font-size: 90px;
+}
+
+body {
+  background: url("./img/fondo-negro.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#intro-text {
+	color: white;
+}
