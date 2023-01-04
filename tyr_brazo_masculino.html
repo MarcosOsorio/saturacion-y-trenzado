@@ -40,22 +40,23 @@
         }
       }
 
-      .image-hover {
-          -webkit-transition: opacity 0.3s ease-in-out;
-          -moz-transition: opacity 0.3s ease-in-out;
-          -ms-transition: opacity 0.3s ease-in-out;
-          -o-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
-          opacity: 0.8;
-      }
-
       .image-hover:hover {
-          opacity: 1;
           color: rgba(255, 255, 255, 1);
           box-shadow: 0 0px 20px rgba(51, 204, 51, .4);          
-      }
-    
+      }      
     </style>
+
+    <script type="text/javascript">
+      function hide_full_screen(){
+        document.getElementById('full-screen').style.display = "none";
+        document.getElementById('no-full-screen').style.display = "";
+      }
+
+      function show_full_screen(){
+        document.getElementById('no-full-screen').style.display = "none";
+        document.getElementById('full-screen').style.display = "";
+      }      
+    </script>
 
     <!-- Custom styles for this template -->
     <link href="./headers.css" rel="stylesheet">
@@ -69,7 +70,7 @@
   </div>
   <nav class="navbar navbar-expand-lg  static-top mb-5 shadow">
     <div class="container-fluid">
-      <span class="fs-1 title"><a href="#">Galeria</a></span>
+      <span class="fs-1 title"><a href="#">Saturación y trenzado</a></span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -105,41 +106,19 @@
 
 <!-- Page Content -->
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-4">
-      <a href="./cristobal_nudo_cerrado.html">      
-        <img src="./galeria/galeria_1.jpg" class="image-hover img-fluid" alt="Responsive image">
-        <p class="mt-4 text-end h4">Cristóbal</p>
-        <p class="mt-2 text-end h6">Nudo Cerrado</p>
-      </a>
+  <div id="no-full-screen" class="row">
+    <div class="col-5">
+      <img onclick="show_full_screen()" src="./disenos/diseno_1.jpeg" class="image-hover img-fluid" alt="Responsive image">
+    </div>    
+    <div class="col-7 px-4">
+      <p class=" text-justify">Preciso es considerar el arte del tatoo como un comportamiento delicado, con factores que debieran ser un tema de reflexión mediante un cuestionamiento crítico. ¿Cómo nos relacionamos con nuestros tatuajes? ¿Qué símbolos decidimos llevar? ¿Cuáles son nuestras motivaciones?. Se entiende que nuestras marcas denotan nuestra personalidad, nuestas ideas y pensamientos más íntimos. Forman parte de nuestra apariencia corporal toda la vida y pasan a ser un discurso personal que nos recuerda permanentemente nuestras decisiones. Recordaremos siempre quien nos tatuó; en qué momento y en qué pasaje de la existencia sucedió. Si tiene importancia; si carece de esta; si los borrarías o no.</p>
     </div>
-    <div class="col-1"></div>
-    <div class="col-4">
-      <a href="./antonia_outline.html">
-        <img src="./galeria/galeria_2.jpeg" class="image-hover img-fluid" alt="Responsive image">
-        <p class="mt-4 text-end h4">Antonia</p>
-        <p class="mt-2 text-end h6">Outline</p>
-      </a>
-    </div>
-    <div class="row mt-5"></div>
-    <div class="row justify-content-center">
-      <div class="col-4">
-        <a href="./mirko_runas.html">        
-          <img src="./galeria/galeria_3.jpeg" class="image-hover img-fluid" alt="Responsive image">
-          <p class="mt-4 text-end h4">Mirko</p>
-          <p class="mt-2 text-end h6">Runas</p>
-        </a>          
-      </div>
-      <div class="col-1"></div>
-      <div class="col-4">
-        <a href="./wladi_puntas.html">
-          <img src="./galeria/galeria_4.jpg" class="image-hover img-fluid" alt="Responsive image">
-          <p class="mt-4 text-end h4">Wladi</p>
-          <p class="mt-2 text-end h6">Puntas</p>
-        </a>
-      </div>  
-    </div>  
   </div>
+  <div style="display:none" id="full-screen" class="row justify-content-center">
+    <div class="col-8">
+      <img onclick="hide_full_screen()" src="./disenos/diseno_1.jpeg" class="image-hover img-fluid" alt="Responsive image">
+    </div>    
+  </div>  
 </div>
 
 </main>
