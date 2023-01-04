@@ -39,6 +39,22 @@
           font-size: 3.5rem;
         }
       }
+
+      .image-hover {
+          -webkit-transition: opacity 0.3s ease-in-out;
+          -moz-transition: opacity 0.3s ease-in-out;
+          -ms-transition: opacity 0.3s ease-in-out;
+          -o-transition: opacity 0.3s ease-in-out;
+          transition: opacity 0.3s ease-in-out;
+          opacity: 0.8;
+      }
+
+      .image-hover:hover {
+          opacity: 1;
+          color: rgba(255, 255, 255, 1);
+          box-shadow: 0 0px 20px rgba(51, 204, 51, .4);          
+      }
+    
     </style>
 
     <!-- Custom styles for this template -->
@@ -53,7 +69,7 @@
   </div>
   <nav class="navbar navbar-expand-lg  static-top mb-5 shadow">
     <div class="container-fluid">
-      <span class="fs-1 title"><a href="#">Diseños</a></span>
+      <span class="fs-1 title"><a href="#">Galeria</a></span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -91,15 +107,30 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-4">
-      <img src="./disenos/diseno_1.jpeg" class="img-fluid" alt="Responsive image">
+      <a href="./tyr_brazo_masculino.html">      
+        <img src="./disenos/diseno_1.jpeg" class="image-hover img-fluid" alt="Responsive image">
+        <p class="mt-4 text-end h4">Tyr</p>
+        <p class="mt-2 text-end h6">Brazo Masculino</p>
+      </a>
     </div>
+    <div class="col-1"></div>
     <div class="col-4">
-      <img src="./disenos/diseno_2.jpeg" class="img-fluid" alt="Responsive image">
+      <a href="./eloh_body_suit.html">
+        <img src="./disenos/diseno_2.jpeg" class="image-hover img-fluid" alt="Responsive image">
+        <p class="mt-4 text-end h4">Eloh</p>
+        <p class="mt-2 text-end h6">Body Suit</p>
+      </a>
     </div>
-      <div class="row mt-5"></div>
-    <div class="col-6">
-      <img src="./disenos/diseno_3.jpeg" class="img-fluid" alt="Responsive image">
-    </div>
+    <div class="row mt-5"></div>
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <a href="./gevo_brazo_femenino.html">        
+          <img src="./disenos/diseno_3.jpeg" class="image-hover img-fluid" alt="Responsive image">
+          <p class="mt-4 text-end h4">Gevo</p>
+          <p class="mt-2 text-end h6">Brazo Femenino</p>
+        </a>          
+      </div>
+    </div>  
   </div>
 </div>
 
