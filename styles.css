@@ -10,6 +10,10 @@ nav{
 	color: white;
 }
 
+.nav-link:hover{
+	color: white;	
+}
+
 a{
 	text-decoration: none; /* no underline */
 	color: white;
@@ -28,6 +32,7 @@ nav li img{
 .title{
 	font-family: dirt2_soulstaker;
 	font-size: 90px;
+	color: white;
 }
 
 body {

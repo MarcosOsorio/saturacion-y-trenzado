@@ -26,6 +26,11 @@
 
 
     <style>
+
+      body{
+          background: url("./img/fondo-azul.png") no-repeat center center fixed;
+      }
+      
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -66,16 +71,17 @@
 
 <main>
   <!-- Navigation -->
-  <div id="navbar">
-  </div>
   <nav class="navbar navbar-expand-lg  static-top mb-5 shadow">
     <div class="container-fluid">
-      <span class="fs-1 title"><a href="#">Saturación y trenzado</a></span>
+      <span class="fs-1 title ml-2">Diseños</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./principal.html">Inicio</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="./galeria.html">Galería</a>
           </li>
@@ -86,13 +92,13 @@
             <a class="nav-link" href="./referentes.html">Referentes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./oficio.html">Oficio</a>
+            <a class="nav-link" href="./procedimiento.html">Procedimiento</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
+          </li>        
           <li class="nav-item">
-            <a target="_blank" href="https://vimeo.com/user186572586" class="nav-link"><img src="./img/icon_vimeo_transparent.png" class="img-rounded" alt="Vimeo"></a>
+            <a target="_blank" href="https://vimeo.com/786490901" class="nav-link"><img src="./img/icon_vimeo_transparent.png" class="img-rounded" alt="Vimeo"></a>
           </li>
           <li class="nav-item">
             <a target="_blank" href="https://www.instagram.com/saturacion_y_trenzado/" class="nav-link"><img src="./img/icon_instagram_transparent.png" class="img-rounded" alt="Instagram"></a>
@@ -106,12 +112,15 @@
 
 <!-- Page Content -->
 <div class="container">
-  <div id="no-full-screen" class="row">
-    <div class="col-5">
+  <div id="no-full-screen" class="row justify-content-center">
+    <div class="col-4">
       <img onclick="show_full_screen()" src="./disenos/diseno_2.jpeg" class="image-hover img-fluid" alt="Responsive image">
     </div>    
-    <div class="col-7 px-4">
-      <p class=" text-justify">Preciso es considerar el arte del tatoo como un comportamiento delicado, con factores que debieran ser un tema de reflexión mediante un cuestionamiento crítico. ¿Cómo nos relacionamos con nuestros tatuajes? ¿Qué símbolos decidimos llevar? ¿Cuáles son nuestras motivaciones?. Se entiende que nuestras marcas denotan nuestra personalidad, nuestas ideas y pensamientos más íntimos. Forman parte de nuestra apariencia corporal toda la vida y pasan a ser un discurso personal que nos recuerda permanentemente nuestras decisiones. Recordaremos siempre quien nos tatuó; en qué momento y en qué pasaje de la existencia sucedió. Si tiene importancia; si carece de esta; si los borrarías o no.</p>
+    <div class="col-6 px-4">
+      <p class="mt-4 text-start h4">Eloh</p>
+      <p class="mt-2 text-start h6">Body Suit</p>      
+      <p class=" text-justify mt-4">Propuesta de espalda entera femenino.</p>
+      <p class=" text-justify">Atributos: Fortaleza, equilibrio y valentía.</p>      
     </div>
   </div>
   <div style="display:none" id="full-screen" class="row justify-content-center">

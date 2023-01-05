@@ -27,10 +27,6 @@
 
     <style>
 
-      body{
-          background: url("./img/fondo-rojo.png") no-repeat center center fixed;
-      }
-            
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -45,23 +41,10 @@
         }
       }
 
-      .image-hover:hover {
-          color: rgba(255, 255, 255, 1);
+      .image{
           box-shadow: 0 0px 20px rgba(51, 204, 51, .4);          
       }      
     </style>
-
-    <script type="text/javascript">
-      function hide_full_screen(){
-        document.getElementById('full-screen').style.display = "none";
-        document.getElementById('no-full-screen').style.display = "";
-      }
-
-      function show_full_screen(){
-        document.getElementById('no-full-screen').style.display = "none";
-        document.getElementById('full-screen').style.display = "";
-      }      
-    </script>
 
     <!-- Custom styles for this template -->
     <link href="./headers.css" rel="stylesheet">
@@ -73,7 +56,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg  static-top mb-5 shadow">
     <div class="container-fluid">
-      <span class="fs-1 title ml-2">Galeria</span>
+      <span class="fs-1 title ml-2">Procedimiento</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -112,19 +95,21 @@
 
 <!-- Page Content -->
 <div class="container">
-  <div id="no-full-screen" class="row justify-content-center">
-    <div class="col-4">
-      <img onclick="show_full_screen()" src="./galeria/galeria_3.jpeg" class="image-hover img-fluid" alt="Responsive image">
-    </div>    
-    <div class="col-6 px-4">
-      <p class="mt-4 text-start h4">Mirko</p>
-      <p class="mt-2 text-start h6">Runas</p>      
-      <p class=" text-justify mt-4">Primera sesión. Parte desde una inquietud de tatuarse un símbolo cualquiera. En base a esto, tuvimos una larga conversación que culminó en una palabra escrita con runas, de manera expresiva. Este tatuaje debiera concluir en invierno.</p>
+
+  <div class="row justify-content-center mt-5">
+    <div class="col-3">
+      <img src="./img/procedimiento_1.jpg" class="img-fluid image" alt="Responsive image">
     </div>
-  </div>
-  <div style="display:none" id="full-screen" class="row justify-content-center">
-    <div class="col-8">
-      <img onclick="hide_full_screen()" src="./galeria/galeria_3.jpeg" class="image-hover img-fluid" alt="Responsive image">
+    <div class="col-1"></div>    
+    <div class="col-5">
+      <p class="text-justify h4 mb-4">Procedimiento</p>      
+      <p class="text-justify">El factor humano es muy importante para esta actividad, por lo que para agendar es preciso considerar:</p>      
+      <p class="text-justify">1- Enviar correo electrónico a <a href="mailto:saturacionytrenzado@gmail.com"><font style="text-decoration: underline;">saturacionytrenzado@gmail.com</font></a> o un mensaje a <a target="_blank" href="https://api.whatsapp.com/send?phone=56979248128&text=Hola!%20Quiero%20hacer%20una%20visita%20al%20estudio%20:D"><font style="text-decoration: underline;">Whatsapp</font></a> generando el primer contacto.</p>
+      <p class="text-justify">2- Coordinar visita al estudio, donde podremos hablar de tu proyecto.</p>
+      <p class="text-justify">3- Una vez llegado a un acuerdo, se pagará un previo abono para diseñar, de ser necesario. Este proceso debiera durar como máximo 2 semanas, según los requerimientos.</p>
+      <p class="text-justify">4- Se acordará una fecha para la primera sesión, estando de acuerdo ambas partes.</p>
+      <p class="text-justify">5- Según la complejidad del diseño variará el precio del oficio desde un monto básico de $30.000 pesos. Precio que será acordado desde el final del diseño.</p>
+      <p class="text-justify">6- Las técnicas de aplicación e inyección de tinta variarán dependiendo de los requerimientos del trabajo según el orden estético acordado.</p>        
     </div>    
   </div>  
 </div>

@@ -24,8 +24,38 @@
     <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#7952b3">
 
+    <script type="text/javascript">
+      function hide_full_screen(){
+
+        document.getElementById('full-screen').style.display = "none";
+
+        let to_show = document.getElementsByClassName('no-full-screen')
+
+        for (let element of to_show) {
+            element.style.display = "";
+        }
+      }
+
+      function show_full_screen(src){
+        let to_hide = document.getElementsByClassName('no-full-screen')
+
+        for (let element of to_hide) {
+            element.style.display = "none";
+        }
+        
+        let mostrador = document.getElementById('full-screen')
+        let foto = mostrador.getElementsByTagName('img')[0];
+        foto.setAttribute("src", src);
+        mostrador.style.display = "";
+      }      
+    </script>
 
     <style>
+
+      body{
+          background: url("./img/fondo-amarillo.png") no-repeat center center fixed;
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -51,7 +81,13 @@
       .glow-button:hover {
         color: rgba(255, 255, 255, 1);
         box-shadow: 0 0px 15px rgba(51, 204, 51, .4);
-      }      
+      }
+
+      img:hover {
+          color: rgba(255, 255, 255, 1);
+          box-shadow: 0 0px 30px rgba(51, 204, 51, .7);          
+      } 
+
     </style>
 
     <!-- Custom styles for this template -->
@@ -62,16 +98,17 @@
 
 <main>
   <!-- Navigation -->
-  <div id="navbar">
-  </div>
   <nav class="navbar navbar-expand-lg  static-top mb-5 shadow">
     <div class="container-fluid">
-      <span class="fs-1 title"><a href="#">Diseños</a></span>
+      <span class="fs-1 title ml-2">Arte Vikingo</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./principal.html">Inicio</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="./galeria.html">Galería</a>
           </li>
@@ -82,13 +119,13 @@
             <a class="nav-link" href="./referentes.html">Referentes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./oficio.html">Oficio</a>
+            <a class="nav-link" href="./procedimiento.html">Procedimiento</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
+          </li>        
           <li class="nav-item">
-            <a target="_blank" href="https://vimeo.com/user186572586" class="nav-link"><img src="./img/icon_vimeo_transparent.png" class="img-rounded" alt="Vimeo"></a>
+            <a target="_blank" href="https://vimeo.com/786490901" class="nav-link"><img src="./img/icon_vimeo_transparent.png" class="img-rounded" alt="Vimeo"></a>
           </li>
           <li class="nav-item">
             <a target="_blank" href="https://www.instagram.com/saturacion_y_trenzado/" class="nav-link"><img src="./img/icon_instagram_transparent.png" class="img-rounded" alt="Instagram"></a>
@@ -102,30 +139,28 @@
 
 <!-- Page Content -->
 <div class="container">
-
+  
       <div class="row mt-5"></div>
       <div class="row mt-5"></div>
 
-  <div class="row justify-content-center">    
+  <div class="no-full-screen row justify-content-center">    
     <div class="col-4 text-center">
-      <img src="./arte_vikingo/arte_vikingo_1.jpg" class="img-fluid" alt="Responsive image">
+      <img onclick="show_full_screen('./arte_vikingo/arte_vikingo_3.jpg')" src="./arte_vikingo/arte_vikingo_3.jpg" class="img-fluid" alt="Responsive image">
     </div>
     <div class="col-4 text-center">
-      <img src="./arte_vikingo/arte_vikingo_2.jpg" class="img-fluid" alt="Responsive image">
+      <img onclick="show_full_screen('./arte_vikingo/arte_vikingo_4.jpg')" src="./arte_vikingo/arte_vikingo_4.jpg" class="img-fluid" alt="Responsive image">
     </div>
   </div>
 
-      <div class="row mt-5"></div>
-      <div class="row mt-5"></div>
+  <div style="display:none" id="full-screen" class="row justify-content-center">
+    <div class="col-12 text-center">
+      <img onclick="hide_full_screen()" class="image-hover img-fluid" alt="Responsive image">
+    </div>    
+  </div>
 
-  <div class="row justify-content-center">    
-    <div class="col-4 text-center">
-      <img src="./arte_vikingo/arte_vikingo_3.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-4 text-center">
-      <img src="./arte_vikingo/arte_vikingo_4.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-  </div>    
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+  
 </div>
 
 </main>

@@ -30,7 +30,7 @@
       body{
           background: url("./img/fondo-rojo.png") no-repeat center center fixed;
       }
-            
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -45,23 +45,14 @@
         }
       }
 
-      .image-hover:hover {
-          color: rgba(255, 255, 255, 1);
+      .image{
           box-shadow: 0 0px 20px rgba(51, 204, 51, .4);          
-      }      
-    </style>
-
-    <script type="text/javascript">
-      function hide_full_screen(){
-        document.getElementById('full-screen').style.display = "none";
-        document.getElementById('no-full-screen').style.display = "";
       }
 
-      function show_full_screen(){
-        document.getElementById('no-full-screen').style.display = "none";
-        document.getElementById('full-screen').style.display = "";
-      }      
-    </script>
+      .contact-icon{
+        height: 60px;
+      }
+    </style>
 
     <!-- Custom styles for this template -->
     <link href="./headers.css" rel="stylesheet">
@@ -73,7 +64,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg  static-top mb-5 shadow">
     <div class="container-fluid">
-      <span class="fs-1 title ml-2">Galeria</span>
+      <span class="fs-1 title ml-2">Contacto</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -112,21 +103,36 @@
 
 <!-- Page Content -->
 <div class="container">
-  <div id="no-full-screen" class="row justify-content-center">
-    <div class="col-4">
-      <img onclick="show_full_screen()" src="./galeria/galeria_3.jpeg" class="image-hover img-fluid" alt="Responsive image">
-    </div>    
-    <div class="col-6 px-4">
-      <p class="mt-4 text-start h4">Mirko</p>
-      <p class="mt-2 text-start h6">Runas</p>      
-      <p class=" text-justify mt-4">Primera sesión. Parte desde una inquietud de tatuarse un símbolo cualquiera. En base a esto, tuvimos una larga conversación que culminó en una palabra escrita con runas, de manera expresiva. Este tatuaje debiera concluir en invierno.</p>
-    </div>
-  </div>
-  <div style="display:none" id="full-screen" class="row justify-content-center">
-    <div class="col-8">
-      <img onclick="hide_full_screen()" src="./galeria/galeria_3.jpeg" class="image-hover img-fluid" alt="Responsive image">
+  <div class="row mt-5"></div>
+  <div class="row mt-5"></div>
+  <div class="row justify-content-center mt-5">
+    <div class="col-1"><a target="_blank" href="https://api.whatsapp.com/send?phone=56979248128&text=Hola!%20Quiero%20hacer%20una%20visita%20al%20estudio%20:D"><img src="./contacto/whatsapp.png" class="contact-icon"></a></div>    
+    <div class="col-4  mt-2">
+      <p class="text-justify">Contactame directamente a <a target="_blank" href="https://api.whatsapp.com/send?phone=56979248128&text=Hola!%20Quiero%20hacer%20una%20visita%20al%20estudio%20:D"><font style="text-decoration: underline;">Whatsapp</font></a> presionando el botón.</p>
     </div>    
   </div>  
+
+  <div class="row justify-content-center mt-5">
+    <div class="col-1"><a href="mailto:saturacionytrenzado@gmail.com"><img src="./contacto/email.png" class="contact-icon"></a></div>    
+    <div class="col-4 mt-2">
+      <p class="text-justify">Escríbeme un correo detallando tu requerimiento a la dirección <a href="mailto:saturacionytrenzado@gmail.com"><font style="text-decoration: underline;">saturacionytrenzado@gmail.com</font></a>.</p>
+    </div>    
+  </div>
+
+  <div class="row justify-content-center mt-5">
+    <div class="col-1"><a target="_blank" href="https://www.instagram.com/saturacion_y_trenzado/"><img src="./contacto/icon_instagram_transparent.png" class="contact-icon"></a></div>    
+    <div class="col-4  mt-3">
+      <p class="text-justify">Sigue la cuenta de Instagram <a target="_blank" href="https://www.instagram.com/saturacion_y_trenzado/"><font style="text-decoration: underline;">Saturación y Trenzado</font></a>.</p>
+    </div>    
+  </div>
+
+  <div class="row justify-content-center mt-5">
+    <div class="col-1"><a href="tel:56979248128"><img src="./contacto/phone.png" class="contact-icon"></a></div>    
+    <div class="col-4 mt-3">
+      <p class="text-justify">Llámanos al teléfono <a href="tel:56979248128"><font style="text-decoration: underline;">56979248128</font></a>.</p>
+    </div>    
+  </div> 
+
 </div>
 
 </main>
